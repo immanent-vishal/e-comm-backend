@@ -1,4 +1,7 @@
 const database = require('./DbConfig')
+require('../models/product')
+require('../models/product_image')
+require('../models/category_product')
 
 try {
   database.sync({ force: false, alter: true })
