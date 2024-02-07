@@ -2,7 +2,7 @@ require('dotenv').config()
 require('./database/connection')
 
 const express = require('express')
-const router = require('./routes/product')
+const router = require('./routes/rootRoute')
 const app = express()
 
 app.use(express.json())
