@@ -20,7 +20,7 @@ const Customer = db.define('Customer', {
   }
 })
 
-Customer.hasMany(Address, {
+Customer.hasOne(Address, {
   foreignKey: 'customerId',
   onDelete: 'Cascade'
 })
